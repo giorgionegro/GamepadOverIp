@@ -75,6 +75,7 @@ For the client you need to install  the latest ViGEmBus driver at [releases](htt
 - [ ] Xinput support 
 - [ ] Multiple gamepad support
     - [ ] Different client side gamepad types
+- [ ] Different client for different platforms 
 
 See the [open issues](https://github.com/giorgionegro/gamepadOverIp/issues) for a full list of proposed features (and known issues).
 
