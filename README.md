@@ -27,7 +27,7 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## Gamepad Over Ip
 
 Simple program to send gamepad input over UDP to a remote host. (for now only in lan)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
