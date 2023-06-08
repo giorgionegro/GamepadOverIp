@@ -1,4 +1,3 @@
-use serde_json::to_string;
 use std::collections::HashMap;
 use std::ffi::c_float;
 use std::net::{IpAddr, Ipv4Addr, SocketAddr, UdpSocket};
@@ -64,7 +63,12 @@ fn axis_changed(
 fn main() {
     //get port from command line
     let args: Vec<String> = std::env::args().collect();
-    let port = &args[1];
+    //if no port is provided, set to 9761
+    let port = if args.len() < 2 {
+        "9761".to_string()
+    } else {
+        args[1].clone()
+    };
     println!("port: {}", port);
     //if port is not valid, exit
     let port: u16 = match port.parse() {

@@ -1,5 +1,5 @@
 [package]
-name = "gamepadOverIp"
+name = "gamepadoverip"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,5 +7,19 @@ edition = "2021"
 
 [dependencies]
 gilrs = "0.10.1"
+vigem-client = "0.1.4"
+vigem = "0.9.1"
+
+[[bin]]
+name = "gamepadoveripclient"
+path = "src/client.rs"
 
 
+[[bin]]
+name = "gamepadoveripserver"
+path = "src/server.rs"
+
+
+
+[profile.release]
+opt-level = 3
