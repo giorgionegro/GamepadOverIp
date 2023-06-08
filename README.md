@@ -29,7 +29,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Simple program to send gamepad input over UDP to a remote host.
+Simple program to send gamepad input over UDP to a remote host. (for now only in lan)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
