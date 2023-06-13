@@ -72,6 +72,7 @@ For the client you need to install  the latest ViGEmBus driver at [releases](htt
 ## Roadmap
 
 - [x] Dinput support
+- [ ] Rumble support
 - [ ] Xinput support 
 - [ ] Multiple gamepad support
     - [ ] Different client side gamepad types
