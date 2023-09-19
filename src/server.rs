@@ -1,15 +1,8 @@
-use gilrs::{Button, Event, Gilrs};
-use std::net::{IpAddr, Ipv4Addr, SocketAddr, UdpSocket};
-
-//fn to init socket
-fn init_socket() -> UdpSocket {
-    let socket = UdpSocket::bind("0.0.0.0:14987").expect("couldn't bind to address");
-    return socket;
-}
+use gilrs::{Event, Gilrs};
+use std::net::UdpSocket;
 
 fn main() {
-    println!("Hello, world!");
-    let socket = init_socket();
+    let socket = UdpSocket::bind("0.0.0.0:14987").expect("couldn't bind to address");
     let mut gilrs = Gilrs::new().unwrap();
 
     //wait for a client to connect, then we will send data to it
@@ -20,7 +13,7 @@ fn main() {
 
     let port = String::from_utf8(buf[..amt].to_vec()).unwrap();
     //respond to client
-    let data = format!("Hello, {:?}!", src);
+    let _data = format!("Hello, {:?}!", src);
     println!("Received data from: {}:{}", ip, port);
     // Iterate over all connected gamepads
     for (_id, gamepad) in gilrs.gamepads() {
